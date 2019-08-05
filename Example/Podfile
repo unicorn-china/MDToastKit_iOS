@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'MDToastKit_Example' do
+  pod 'MDToastKit', :path => '../'
+
+  target 'MDToastKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
