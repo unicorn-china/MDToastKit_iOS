@@ -18,17 +18,10 @@ TODO: Add long description of the pod here.
   s.source_files = 'MDToastKit/*'
   s.resources = 'MDToastKit/AssetsImage/*.png'
 
-  s.subspec 'MDCustomToastView' do |ss|
-    ss.source_files = 'MDToastKit/MDCustomToastView/*'
+  s.subspec 'MDToastManager' do |ss|
+    ss.source_files = 'MDToastKit/MDToastManager/*'
+
   end
 
-  s.subspec 'MDNotificationToastView' do |ss|
-    ss.source_files = 'MDToastKit/MDNotificationToastView/*'
-  end
-
-
-  s.subspec 'MDProgressToastView' do |ss|
-    ss.source_files = 'MDToastKit/MDProgressToastView/*'
-  end
 
 end

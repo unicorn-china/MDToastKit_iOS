@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 @interface MDToastStyle : NSObject
 
 @property (strong, nonatomic) UIColor *backgroundColor;

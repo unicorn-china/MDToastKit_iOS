@@ -13,7 +13,6 @@
 		04BC408722F8264C00BE0509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BC408622F8264C00BE0509 /* Assets.xcassets */; };
 		04BC408A22F8264C00BE0509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BC408822F8264C00BE0509 /* LaunchScreen.storyboard */; };
 		04BC408D22F8264C00BE0509 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC408C22F8264C00BE0509 /* main.m */; };
-		04BC40AE22F8266400BE0509 /* MDToastManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC409422F8266400BE0509 /* MDToastManager.m */; };
 		04BC40AF22F8266400BE0509 /* MDToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC409622F8266400BE0509 /* MDToastView.m */; };
 		04BC40B022F8266400BE0509 /* MDToastStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC409722F8266400BE0509 /* MDToastStyle.m */; };
 		04BC40B122F8266400BE0509 /* MDToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC409A22F8266400BE0509 /* MDToast.m */; };
@@ -27,6 +26,7 @@
 		04BC40BA22F8266400BE0509 /* failure.png in Resources */ = {isa = PBXBuildFile; fileRef = 04BC40A722F8266400BE0509 /* failure.png */; };
 		04BC40BB22F8266400BE0509 /* MDProgressToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC40AB22F8266400BE0509 /* MDProgressToastView.m */; };
 		04BC40BD22F8267000BE0509 /* MDToastKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 04BC40BC22F8267000BE0509 /* MDToastKit.podspec */; };
+		04BC40C122F82DC100BE0509 /* MDToastManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC40BF22F82DC100BE0509 /* MDToastManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,6 @@
 		04BC408922F8264C00BE0509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BC408B22F8264C00BE0509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04BC408C22F8264C00BE0509 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		04BC409422F8266400BE0509 /* MDToastManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDToastManager.m; sourceTree = "<group>"; };
 		04BC409622F8266400BE0509 /* MDToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDToastView.m; sourceTree = "<group>"; };
 		04BC409722F8266400BE0509 /* MDToastStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDToastStyle.m; sourceTree = "<group>"; };
 		04BC409822F8266400BE0509 /* MDToastStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDToastStyle.h; sourceTree = "<group>"; };
@@ -56,11 +55,12 @@
 		04BC40A522F8266400BE0509 /* failure_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = failure_dark.png; sourceTree = "<group>"; };
 		04BC40A622F8266400BE0509 /* success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success.png; sourceTree = "<group>"; };
 		04BC40A722F8266400BE0509 /* failure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = failure.png; sourceTree = "<group>"; };
-		04BC40A922F8266400BE0509 /* MDToastManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDToastManager.h; sourceTree = "<group>"; };
 		04BC40AB22F8266400BE0509 /* MDProgressToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDProgressToastView.m; sourceTree = "<group>"; };
 		04BC40AC22F8266400BE0509 /* MDProgressToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDProgressToastView.h; sourceTree = "<group>"; };
 		04BC40AD22F8266400BE0509 /* MDToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDToast.h; sourceTree = "<group>"; };
 		04BC40BC22F8267000BE0509 /* MDToastKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MDToastKit.podspec; path = ../../MDToastKit.podspec; sourceTree = "<group>"; };
+		04BC40BF22F82DC100BE0509 /* MDToastManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDToastManager.m; sourceTree = "<group>"; };
+		04BC40C022F82DC100BE0509 /* MDToastManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDToastManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,39 +111,13 @@
 		04BC409322F8266400BE0509 /* MDToastKit */ = {
 			isa = PBXGroup;
 			children = (
+				04BC40BE22F82DC100BE0509 /* MDToastManager */,
 				04BC40A022F8266400BE0509 /* AssetsImage */,
-				04BC409522F8266400BE0509 /* MDCustomToastView */,
-				04BC409B22F8266400BE0509 /* MDNotificationToastView */,
-				04BC40AA22F8266400BE0509 /* MDProgressToastView */,
 				04BC40AD22F8266400BE0509 /* MDToast.h */,
 				04BC409A22F8266400BE0509 /* MDToast.m */,
-				04BC40A922F8266400BE0509 /* MDToastManager.h */,
-				04BC409422F8266400BE0509 /* MDToastManager.m */,
 			);
 			name = MDToastKit;
 			path = ../../MDToastKit;
-			sourceTree = "<group>";
-		};
-		04BC409522F8266400BE0509 /* MDCustomToastView */ = {
-			isa = PBXGroup;
-			children = (
-				04BC409622F8266400BE0509 /* MDToastView.m */,
-				04BC409722F8266400BE0509 /* MDToastStyle.m */,
-				04BC409822F8266400BE0509 /* MDToastStyle.h */,
-				04BC409922F8266400BE0509 /* MDToastView.h */,
-			);
-			path = MDCustomToastView;
-			sourceTree = "<group>";
-		};
-		04BC409B22F8266400BE0509 /* MDNotificationToastView */ = {
-			isa = PBXGroup;
-			children = (
-				04BC409C22F8266400BE0509 /* MDNotificationToastView.h */,
-				04BC409D22F8266400BE0509 /* MDNotificationToastStyle.h */,
-				04BC409E22F8266400BE0509 /* MDNotificationToastView.m */,
-				04BC409F22F8266400BE0509 /* MDNotificationToastStyle.m */,
-			);
-			path = MDNotificationToastView;
 			sourceTree = "<group>";
 		};
 		04BC40A022F8266400BE0509 /* AssetsImage */ = {
@@ -159,13 +133,23 @@
 			path = AssetsImage;
 			sourceTree = "<group>";
 		};
-		04BC40AA22F8266400BE0509 /* MDProgressToastView */ = {
+		04BC40BE22F82DC100BE0509 /* MDToastManager */ = {
 			isa = PBXGroup;
 			children = (
-				04BC40AB22F8266400BE0509 /* MDProgressToastView.m */,
+				04BC40C022F82DC100BE0509 /* MDToastManager.h */,
+				04BC40BF22F82DC100BE0509 /* MDToastManager.m */,
+				04BC409D22F8266400BE0509 /* MDNotificationToastStyle.h */,
+				04BC409F22F8266400BE0509 /* MDNotificationToastStyle.m */,
+				04BC409C22F8266400BE0509 /* MDNotificationToastView.h */,
+				04BC409E22F8266400BE0509 /* MDNotificationToastView.m */,
 				04BC40AC22F8266400BE0509 /* MDProgressToastView.h */,
+				04BC40AB22F8266400BE0509 /* MDProgressToastView.m */,
+				04BC409822F8266400BE0509 /* MDToastStyle.h */,
+				04BC409722F8266400BE0509 /* MDToastStyle.m */,
+				04BC409922F8266400BE0509 /* MDToastView.h */,
+				04BC409622F8266400BE0509 /* MDToastView.m */,
 			);
-			path = MDProgressToastView;
+			path = MDToastManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +235,7 @@
 				04BC40B222F8266400BE0509 /* MDNotificationToastView.m in Sources */,
 				04BC40AF22F8266400BE0509 /* MDToastView.m in Sources */,
 				04BC408D22F8264C00BE0509 /* main.m in Sources */,
-				04BC40AE22F8266400BE0509 /* MDToastManager.m in Sources */,
+				04BC40C122F82DC100BE0509 /* MDToastManager.m in Sources */,
 				04BC40B322F8266400BE0509 /* MDNotificationToastStyle.m in Sources */,
 				04BC407F22F8264C00BE0509 /* AppDelegate.m in Sources */,
 				04BC40B122F8266400BE0509 /* MDToast.m in Sources */,
